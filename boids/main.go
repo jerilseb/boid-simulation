@@ -9,14 +9,14 @@ import (
 )
 
 const (
-	screenWidth, screenHeight = 640, 360
+	screenWidth, screenHeight = 720, 480
 	boidCount                 = 500
 	viewRadius                = 13
 	adjRate                   = 0.015
 )
 
 var (
-	green   = color.RGBA{10, 255, 245, 255}
+	green   = color.RGBA{255, 255, 130, 255}
 	boids   [boidCount]*Boid
 	boidMap [screenWidth + 1][screenHeight + 1]int
 	rWlock  = sync.RWMutex{}
